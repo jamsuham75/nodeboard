@@ -13,11 +13,11 @@
     <%- include('nav.html') %>
 
     <div>채팅방</div>  
-    <textarea class="container mt-4" id = "rcv" rows="10"></textarea>
-    <input id = "input1">
-    <button id = "send">서버에 메시지 보내기</button>
-    <button id = "room1">채팅방1 입장</button>
-    <button id = "room1-send">채팅방1에서 메시지 보내기</button>
+    <textarea class="container mt-4" id = "rcv" rows="10"></textarea><p></p>
+    <input id = "input1" size = 50>
+    <button id = "send" class = "btn btn-outline-success">서버에 메시지 보내기</button><p></p>
+    <button id = "room1" class = "btn btn-outline-primary" style = "width : 200pt">채팅방1 입장</button>
+    <button id = "room1-send" class = "btn btn-outline-warning" style = "width : 200pt">채팅방1에서 메시지 보내기</button>
     <script>
         var socket = io();
 
