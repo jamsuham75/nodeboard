@@ -529,8 +529,8 @@ io.on('connection', function(socket){
 
   socket.on('user-send', function(data){
     console.log(data);
-    // io.emit('broadcast', data);
-    io.to(socket.id).emit('broadcast', data);
+     io.emit('broadcast', data);
+    //io.to(socket.id).emit('broadcast', data);
   });
 })
 
